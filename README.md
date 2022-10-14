@@ -1,23 +1,13 @@
-# RESTful API Node Typescript Server Boilerplate
-
-[![Node.js CI](https://github.com/saisilinus/node-express-mongoose-typescript-boilerplate/actions/workflows/node.js.yml/badge.svg)](https://github.com/saisilinus/node-express-mongoose-typescript-boilerplate/actions/workflows/node.js.yml)
-[![codecov](https://codecov.io/gh/saisilinus/node-express-mongoose-typescript-boilerplate/branch/master/graph/badge.svg?token=UYJAL9KTMD)](https://codecov.io/gh/saisilinus/node-express-mongoose-typescript-boilerplate)
-
-This project pairs well with this [React Template](https://github.com/saisilinus/react-redux-typescript-boilerplate)
+# RESTful API Node Typescript Server
 
 ## Manual Installation
 
 Clone the repo:
 
-```bash
-git clone --depth 1 https://github.com/saisilinus/node-express-mongoose-typescript-boilerplate.git
-cd node-express-mongoose-typescript-boilerplate
-```
-
 Install the dependencies:
 
 ```bash
-yarn install
+yarn
 ```
 
 Set the environment variables:
@@ -215,7 +205,7 @@ EMAIL_FROM=support@yourapp.com
 │   ├── custom.d.ts                   # File for extending types from node modules
 │   ├── declaration.d.ts              # File for declaring modules without types
 │   ├── index.ts                      # App entry file
-│   ├── modules                       # Modules such as models, controllers, services 
+│   ├── modules                       # Modules such as models, controllers, services
 │   └── routes                        # Routes
 ├── TODO.md                         # TODO List
 ├── package.json
@@ -433,9 +423,9 @@ const options = {
 
 The `projectBy` option can include multiple criteria (separated by a comma) but cannot include and exclude fields at the same time. Check out the following examples:
 
-  - [x] `name:hide, role:hide` should work
-  - [x] `name:include, role:include` should work
-  - [ ] `name:include, role:hide` will not work
+- [x] `name:hide, role:hide` should work
+- [x] `name:include, role:include` should work
+- [ ] `name:include, role:hide` will not work
 
 The plugin also supports sorting by multiple criteria (separated by a comma): `sortBy: name:desc,role:asc`
 
